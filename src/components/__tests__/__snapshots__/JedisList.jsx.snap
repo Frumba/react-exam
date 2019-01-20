@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jedis list empty 1`] = `null`;
+
+exports[`Jedis list with elements 1`] = `
+Array [
+  <div>
+    Jedi: id: 
+    1
+     name: 
+    Qui-Gon Jinn
+  </div>,
+  <div>
+    Jedi: id: 
+    2
+     name: 
+    Mace Windu
+  </div>,
+  <div>
+    Jedi: id: 
+    3
+     name: 
+    Aayla Secura
+  </div>,
+  <div>
+    Jedi: id: 
+    4
+     name: 
+    Yoda
+  </div>,
+  <div>
+    Jedi: id: 
+    5
+     name: 
+    Plo Koon
+  </div>,
+  <div>
+    Jedi: id: 
+    6
+     name: 
+    Luke Skywalker
+  </div>,
+  <div>
+    Jedi: id: 
+    7
+     name: 
+    Adi Gallia
+  </div>,
+  <div>
+    Jedi: id: 
+    8
+     name: 
+    Agen Kolar
+  </div>,
+  <div>
+    Jedi: id: 
+    9
+     name: 
+    Ki-Adi-Mundi
+  </div>,
+  <div>
+    Jedi: id: 
+    10
+     name: 
+    Quinlan Vos
+  </div>,
+]
+`;
