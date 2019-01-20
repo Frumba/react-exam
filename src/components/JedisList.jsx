@@ -1,21 +1,26 @@
-import React, { PropTypes } from 'react';
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 const JedisList = (props) => {
   const { jedis } = props;
 
   return (
-    <div className="jedis">
+    <Fragment>
       {jedis.map((jedi) => (
         <div key={jedi.id}>
           Jedi: id: {jedi.id} name: {jedi.name}
         </div>
       ))}
-    </div>
+    </Fragment>
   );
 };
 
 JedisList.propTypes = {
   jedis: PropTypes.array
+};
+
+JedisList.defaultProps = {
+  jedis: []
 };
 
 export default JedisList;
