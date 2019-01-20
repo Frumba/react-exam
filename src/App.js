@@ -1,13 +1,13 @@
-import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
+import React, {Component, PropTypes} from 'react';
+import {connect} from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
 
-import { fetchJedi } from './action';
+import {fetchJedi} from './action';
 
 function mapStateToProps(state) {
   return {
-    jedi: state.jedi,
+    jedi: state.jedi
   };
 }
 
@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   render() {
-    const { jedi } = this.props;
+    const {jedi} = this.props;
 
     return (
       <div className="App">
@@ -40,9 +40,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-  jedi: PropTypes.array,
+  jedi: PropTypes.array
 };
 
-export default connect(
-  mapStateToProps,
-)(App);
+export default connect(mapStateToProps)(App);

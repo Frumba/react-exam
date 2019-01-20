@@ -11,14 +11,20 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
+    "eslint": "^5.12.1",
     "json-server": "^0.9.5",
+    "prettier": "^1.16.0",
     "react-scripts": "0.9.1"
   },
   "scripts": {
-    "api": "json-server --watch api/db.json --port 3001",
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "linter": "eslint --cache 'src/**/*.js' 'src/**/*.jsx'",
+    "linter:fix": "npm run linter -- --fix",
+    "pretty": "prettier --write 'src/**/*.js*' && npm run linter:fix",
+    "start": "concurrently \"npm run start:api\" \"npm run start:front\"",
+    "start:front": "react-scripts start",
+    "start:api": "json-server --watch api/db.json --port 3001",
+    "test": "react-scripts test --env=jsdom"
   }
 }

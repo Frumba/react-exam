@@ -27,19 +27,34 @@ Please take some time to add a feature which shows your value : how you think, h
 => are your tests telling you that the first feature still works?
 
 ## Getting started
-Launch the front-end server with:
+Launch API and front-end:
 ```
 npm start
 ```
 
-Launch the API server (in a second terminal) with:
+Launch the front-end server:
 ```
-npm run api
+npm run start:frontend
 ```
 
-Be sure that the project is compiling before pushing with the command:
+Launch API server:
 ```
-npm run compile
+npm run start:api
+```
+
+Create production build
+```
+npm run build
+```
+
+Check eslint errors
+```
+npm run linter
+```
+
+Fix most of eslint errors and pretty project:
+```
+npm run pretty
 ```
 
 ## How to?
