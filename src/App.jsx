@@ -6,6 +6,7 @@ import './styles/App.css';
 import JedisList from './components/JedisList';
 
 import { fetchJedis } from './actions/jedi';
+import Header from './components/Header';
 
 class App extends Component {
   componentWillMount() {
@@ -23,6 +24,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Header />
         <JedisList jedis={jedis} />
       </div>
     );

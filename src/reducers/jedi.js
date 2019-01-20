@@ -1,7 +1,9 @@
 export default (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_FINISH':
-      return [...action.payload, ...state];
+    case 'FETCH_JEDI_FINISH':
+      return [...state, ...action.payload];
+    case 'ADD_JEDI_FINISH':
+      return [...state, action.payload];
     default:
       return state;
   }
