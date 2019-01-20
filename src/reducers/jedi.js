@@ -2,7 +2,7 @@
  * Created by thomashourlier on 2/26/17.
  */
 
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 
 function jediReducer(state = [], action) {
   switch (action.type) {
@@ -14,5 +14,5 @@ function jediReducer(state = [], action) {
 }
 
 export default combineReducers({
-  jedi: jediReducer
+  jedis: jediReducer
 });
