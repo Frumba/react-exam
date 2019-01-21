@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header render normally 1`] = `
+<div
+  className="header"
+>
+  <h1
+    className="title"
+  >
+    Jedis handler
+  </h1>
+  <button
+    className="jedi-open-modal"
+    onClick={[Function]}
+    type="button"
+  >
+    Add Jedi
+  </button>
+  <jediModal
+    className="modal"
+    dispatch={[Function]}
+    isOpen={false}
+    onRequestClose={[Function]}
+  />
+</div>
+`;

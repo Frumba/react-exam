@@ -20,11 +20,11 @@ class App extends Component {
   }
 
   render() {
-    const { jedis } = this.props;
+    const { jedis, dispatch } = this.props;
 
     return (
       <div className="App">
-        <Header />
+        <Header dispatch={dispatch} />
         <JedisList jedis={jedis} />
       </div>
     );

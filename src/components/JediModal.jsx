@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { addJedi } from '../actions/jedi';
@@ -51,4 +50,4 @@ JediModal.propTypes = {
   onRequestClose: PropTypes.func.isRequired
 };
 
-export default connect()(JediModal);
+export default JediModal;

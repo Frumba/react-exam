@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import JediModal from './JediModal';
 
-export default class Header extends Component {
+class Header extends Component {
   constructor() {
     super();
 
@@ -24,6 +25,7 @@ export default class Header extends Component {
 
   render() {
     const { modalIsOpen } = this.state;
+    const { dispatch } = this.props;
 
     return (
       <div className="header">
@@ -31,8 +33,14 @@ export default class Header extends Component {
         <button className="jedi-open-modal" onClick={this.openModal} type="button">
           Add Jedi
         </button>
-        <JediModal isOpen={modalIsOpen} onRequestClose={this.closeModal} className="modal" />
+        <JediModal dispatch={dispatch} isOpen={modalIsOpen} onRequestClose={this.closeModal} className="modal" />
       </div>
     );
   }
 }
+
+Header.propTypes = {
+  dispatch: PropTypes.func.isRequired
+};
+
+export default Header;
